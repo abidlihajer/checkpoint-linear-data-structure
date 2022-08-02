@@ -1,0 +1,18 @@
+ALGORITHM element_different
+VAR
+   arr1,arr2: : ARRAY_OF INTEGER[10];
+   i,j,sum:INTEGER;
+BEGIN
+   sum:= 0;
+   FOR i FROM 0 TO arr1.length-1  DO
+   IF (not arr1[i] in arr2) THEN
+      sum:=sum + arr[i]
+      END_IF
+      END_FOR
+    FOR j FROM 0 TO arr2.length-1  DO
+   IF (not arr2[j] in arr1) THEN
+      sum:=sum + arr2[J]
+      END_IF
+      END_FOR
+    Write(sum)
+END
